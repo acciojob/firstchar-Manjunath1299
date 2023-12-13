@@ -1,8 +1,12 @@
 function firstChar(text) {
-  // your code here
-}
+  for (const char of text) {
+    if (char !== ' ') {
+      return char; 
+    }
+  }
 
-// Do not change the code below
+  return ''; 
+}
 
 const text = prompt("Enter text:");
 alert(firstChar(text));
